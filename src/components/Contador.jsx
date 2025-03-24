@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { Button } from "react-bootstrap";
 
 
 const Contador = ({infoComision}) => {
-    let numero = 1;
+    const [numero, setNumero] = useState(1)
     const sumar = () => {
-        numero++
+        setNumero(numero + 1)
     }
     return (
         <section className="text-center">
